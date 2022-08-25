@@ -17,7 +17,7 @@ input.onkeyup = (e) => {
         wrapper.classList.add("active");
         showSuggestions(arr);
         let compList = sugBox.querySelectorAll("li");
-        for (let i = 0; i < compList.length; i++){
+        for (let i = 0; i < compList.length; i++) {
             compList[i].setAttribute("onclick", "clicked(this)");
         };
     } else {
