@@ -17,7 +17,7 @@ input.onkeyup = (e) => {
         console.log(arr)
         wrapper.classList.add("active");
     } else {
-
+        wrapper.classList.remove("active");
     }
     showSuggestions(arr)
 }
