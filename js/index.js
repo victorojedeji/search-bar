@@ -26,7 +26,7 @@ function showSuggestions(list) {
     let listData;
     if(!list.length) {
         userTypedVal = input.value;
-        listData = `<li>${userTypedVal}</li>`;
+        listData = `<li>${userTypedVal}</li>` ;
     }else {
         listData =list.join("");
     }
