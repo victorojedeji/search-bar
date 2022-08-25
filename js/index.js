@@ -6,19 +6,27 @@ const sugBox = wrapper.querySelector(".suggestions-list");
 
 input.onkeyup = (e) => {
     let userData = e.target.value;
-    let emptyArr = [];
+    let arr = [];
     if (userData){
-        emptyArr = suggestions.filter((data) => {
+        arr = suggestions.filter((data) => {
             return data.toLowerCase().startsWith(userData.toLowerCase());
         });
-        emptyArr = emptyArr.map((data) => {
+        arr = arr.map((data) => {
             return data = "<li>" + data + "</li>";
         })
-        console.log(emptyArr)
+        console.log(arr)
+    } else {
+
     }
+    showSuggestions(arr)
 }
 
 function showSuggestions(list) {
     let listData;
-    if(!list.length)
+    if(!list.length) {
+
+    }else {
+        listData =list.join("");
+    }
+    sugBox.innerHTML = listData;
 }
