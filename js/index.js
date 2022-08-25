@@ -15,6 +15,7 @@ input.onkeyup = (e) => {
             return data = "<li>" + data + "</li>";
         })
         console.log(arr)
+        wrapper.classList.add("active");
     } else {
 
     }
@@ -24,7 +25,8 @@ input.onkeyup = (e) => {
 function showSuggestions(list) {
     let listData;
     if(!list.length) {
-
+        userTypedVal = input.value;
+        listData = `<li>${userTypedVal}</li>`;
     }else {
         listData =list.join("");
     }

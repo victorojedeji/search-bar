@@ -26,6 +26,19 @@ body {
     border-radius: .5rem;
 }
 
+.wrapper.active .suggestions-list {
+    opacity: 1;
+}
+
+
+.suggestions-list {
+    width: 100%;
+    line-height: 1.7;
+    color: #575757;
+    list-style: none;
+    opacity: 0;
+}
+
 input {
     border: none;
     padding: .5rem;
@@ -62,13 +75,6 @@ i {
 
 i:hover {
     color: black;
-}
-
-.suggestions-list {
-    width: 100%;
-    line-height: 1.7;
-    color: #575757;
-    list-style: none;
 }
 
 li {
