@@ -22,7 +22,12 @@ input.onkeyup = (e) => {
         };
     } else {
         wrapper.classList.remove("active");
-    }
+    };
+    
+};
+
+function clicked(element) {
+    let clickedList = element.textContent;
     
 }
 
