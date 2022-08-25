@@ -28,6 +28,7 @@ body {
 
 .wrapper.active .suggestions-list {
     opacity: 1;
+    display: block;
 }
 
 
@@ -37,6 +38,7 @@ body {
     color: #575757;
     list-style: none;
     opacity: 0;
+    display: none;
 }
 
 input {

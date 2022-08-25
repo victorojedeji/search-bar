@@ -28,7 +28,8 @@ input.onkeyup = (e) => {
 
 function clicked(element) {
     let clickedList = element.textContent;
-    
+    input.value = clickedList;
+    wrapper.classList.remove("active");
 }
 
 function showSuggestions(list) {
