@@ -14,12 +14,16 @@ input.onkeyup = (e) => {
         arr = arr.map((data) => {
             return data = "<li>" + data + "</li>";
         })
-        console.log(arr)
         wrapper.classList.add("active");
+        showSuggestions(arr);
+        let compList = sugBox.querySelectorAll("li");
+        for (let i = 0; i < compList.length; i++){
+            compList[i].setAttribute("onclick", "clicked(this)");
+        };
     } else {
         wrapper.classList.remove("active");
     }
-    showSuggestions(arr)
+    
 }
 
 function showSuggestions(list) {
